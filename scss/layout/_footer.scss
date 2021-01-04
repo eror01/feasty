@@ -1,0 +1,16 @@
+.footer {
+    height: 9rem;
+    background-color: #000;
+
+    &__text {
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        padding-top: 2rem;
+        
+        p{
+            color: #fff;
+            padding: .9rem;
+        }
+    }
+}

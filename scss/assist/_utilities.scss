@@ -1,0 +1,30 @@
+// Color
+$color-primary : #e74e0a;
+$color-primary-light: #d35400;
+$color-secondary-dark: #183845;
+$color-secondary-light: #2a9bbb;
+
+// Card heading colors
+.card-normal {
+    background: url(/dist/img/super-1.jpeg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-plus {
+    background: url(/dist/img/super-2.jpeg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-superman {
+    background: url(/dist/img/super-3.jpeg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
