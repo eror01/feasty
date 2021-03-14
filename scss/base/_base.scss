@@ -6,4 +6,17 @@
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+
+    @include responsive(breakpoint5){
+        font-size: 58%;
+    }
+
+    @include responsive(breakpoint3){
+        font-size: 50%;
+    }
+
+    @include responsive(breakpoint2){
+        font-size: 46%;
+    }
 }

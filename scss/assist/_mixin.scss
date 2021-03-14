@@ -1,0 +1,24 @@
+@mixin responsive($media){
+    @if $media == breakpoint5{
+        @media only screen and (max-width: 1200px){
+            @content;
+        }
+    }
+    @if $media == breakpoint4{
+        @media only screen and (max-width: 1000px){
+            @content;
+        }
+    }
+
+    @if $media == breakpoint3{
+        @media only screen and (max-width: 750px){
+            @content;
+        }
+    }
+
+    @if $media == breakpoint2{
+        @media only screen and (max-width: 650px){
+            @content;
+        }
+    }
+}

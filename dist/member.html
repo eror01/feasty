@@ -12,107 +12,109 @@
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/script.js"></script>
     <title>Feasty</title>
   </head>
 
   <body>
-        <nav class="nav">
-            <div class="nav__bar">
-                <h2 class="nav__heading">Feasty</h2>
-                <ul class="nav__links">
-                    <li class="nav__link"><a href="index.html">Home</a></li>
-                    <li class="nav__link"><a href="#" class="nav__item">Shop</a><i class="fas fa-sort-down"></i>
-                            <ul class="dropmenu">
-                                <li class="nav__link-sub"><a href="#">Hats</a></li>
-                                <li class="nav__link-sub"><a href="#">Hoodies</a></li>
-                                <li class="nav__link-sub"><a href="#">Pants</a></li>
-                                <li class="nav__link-sub"><a href="#">Supplements</a>
-                                    <ul class="dropmenu-sub">
-                                        <li class="nav__link-sub"><a href="#">Pre-Workouts</a></li>
-                                        <li class="nav__link-sub"><a href="#">Protein</a></li>
-                                        <li class="nav__link-sub"><a href="#">BCAAs</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                    </li>
-                    <li class="nav__link"><a href="#">Gallery</a></li>
-                    <li class="nav__link"><a href="#">About</a><i class="fas fa-sort-down"></i>
-                        <ul class="dropmenu">
-                            <li class="nav__link-sub"><a href="#">Contact</a></li>
-                            <li class="nav__link-sub"><a href="#">Blog</a></li>
-                        </ul>
-                    </li>
-                </ul>
+
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__image">
+          <img src="./img/logo.png" alt="Gym Feasty Logo" class="navbar__logo">
+        </div>
+        <div class="navbar__links">
+          <ul class="navbar__list">
+            <li class="navbar__link"><a href="index.html" class="navbar__item">Home</a></li>
+            <li class="navbar__link">
+              <a href="#" class="navbar__item">
+                Shop
+                <span class="fas fa-caret-down"></span>
+              </a>
+              <ul class="dropdown">
+                <li class="navbar__link-sub"><a href="#" class="navbar__item-sub">Supplements</a></li>
+              </ul>
+            </li>
+            <li class="navbar__link"><a href="gallery.html" class="navbar__item">Gallery</a></li>
+            <li class="navbar__link"><a href="#" class="navbar__item">About</a></li>
+            <li class="navbar__link"><a href="contact.html" class="navbar__item">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+  </header>
+
+
+    <section class="member">
+        <div class="member__container">
+            <div class="member__header">
+                <h2 class="member__head">Memberships</h2>
+                <p class="member__chose">
+                    Select the right gym membership for you.
+                </p>
             </div>
-        </nav>
-
-        <div class="container">
-            <div class="flex">
-                <div class="card">
-                    <div class="card__heading card-normal">
+            <div class="member__options-container">
+                <div class="member__card-container">
+                    <div class="member__card">
+                        <div class="member__card-head">
+                            <img src="./img/normal.png" alt="Normal" class="member__card-option">
+                        </div>
+                        <div class="member__card-body">
+                            <h2 class="member__price">$20/<sup>month</sup></h2>
+                            <ul class="member__list">
+                                <li class="member__benefit">3 Classes/Weekly</li>
+                                <li class="member__benefit">Free T-Shirt</li>
+                                <li class="member__benefit">Cardio, Weights & Machines</li>
+                                <li class="member__benefit">Locker Rooms with Showers</li>
+                            </ul>
+                            <button class="btn-select"><a href="checkout.html" class="member__select">Select</a></button>
+                        </div>
                     </div>
-                    <div class="card__pricing">
-                        <span>$20/<sup>month</sup></span>
-                        <ul>
-                            <li>3 Classes/Weakly</li>
-                            <li>Free T-Shirt</li>
-                            <li>Cardio, Weights & Machines</li>
-                            <li>Locker Rooms With Showers</li>
-                        </ul>
+                    <div class="member__card">
+                        <div class="member__card-head">
+                            <img src="./img/plus.png" alt="Plus" class="member__card-option">
+                        </div>
+                        <div class="member__card-body">
+                            <h2 class="member__price">$40/<sup>month</sup></h2>
+                            <ul class="member__list">
+                                <li class="member__benefit">5 Classes/Weekly</li>
+                                <li class="member__benefit">Free T-Shirt & Hoodie</li>
+                                <li class="member__benefit">Cardio, Weights & Machines</li>
+                                <li class="member__benefit">Locker Rooms with Showers</li>
+                                <li class="member__benefit">50% off drinks</li>
+                                <li class="member__benefit">Personal Training</li>
+                            </ul>
+                            <button class="btn-select"><a href="checkout.html" class="member__select">Select</a></button>
+                        </div>
                     </div>
-                    <div class="card__signup">
-                        <a href="checkout.html" class="btn-sign">Select</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__heading card-plus">
-                    </div>
-                    <div class="card__pricing">
-                        <span>$40/<sup>month</sup></span>
-                        <ul>
-                            <li>5 Classes/Weakly</li>
-                            <li>Free T-Shirt & Hoodie</li>
-                            <li>Cardio, Weights & Machines</li>
-                            <li>Locker Rooms with Showers</li>
-                            <li>50% off Drinks</li>
-                            <li>Personal Training</li>                        
-                        </ul>
-                    </div>
-                    <div class="card__signup">
-                        <a href="checkout.html" class="btn-sign">Select</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__heading card-superman">
-                    </div>
-                    <div class="card__pricing">
-                        <span>$70/<sup>month</sup></span>
-                        <ul>
-                            <li>3 Classes/Weakly</li>
-                            <li>Free T-Shirt & Hoodie</li>
-                            <li>Cardio, Weights & Machines</li>
-                            <li>Locker Rooms with Showers</li>
-                            <li>50% off Drinks</li>
-                            <li>Use of Hydro Massage</li>
-                            <li>Full Use of the heated indoor pool</li>
-                            <li>Unlimited Access to Home Club</li>
-                            <li>Personal Training</li>
-                        </ul>
-                    </div>
-                    <div class="card__signup">
-                        <a href="checkout.html" class="btn-sign">Select</a>
+                    <div class="member__card">
+                        <div class="member__card-head">
+                            <img src="./img/superman.png" alt="superman" class="member__card-option">
+                        </div>
+                        <div class="member__card-body">
+                            <h2 class="member__price">$70/<sup>month</sup></h2>
+                            <ul class="member__list">
+                                <li class="member__benefit">7 Classes/Weekly</li>
+                                <li class="member__benefit">Free T-Shirt & Hoodie</li>
+                                <li class="member__benefit">Cardio, Weights & Machines</li>
+                                <li class="member__benefit">Locker Rooms with Showers</li>
+                                <li class="member__benefit">50% off drinks</li>
+                                <li class="member__benefit">Use of Hydro Massage</li>
+                                <li class="member__benefit">Full use of the heated indoor pool</li>
+                                <li class="member__benefit">Unlimited Access to Home Club</li>
+                                <li class="member__benefit">Personal Training</li>
+                            </ul>
+                            <button class="btn-select"><a href="checkout.html" class="member__select">Select</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            
-        
-        <footer class="footer">
-            <div class="footer__text">
-              <p>Feasty &copy; 2021 by Eror Aleksandar</p>
-            </div>
-          </footer>
+    </section>
+
   </body>
 </html>

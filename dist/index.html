@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,76 +12,181 @@
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/script.js"></script>
     <title>Feasty</title>
   </head>
 
   <body>
-        <nav class="nav">
-            <div class="nav__bar">
-                <h2 class="nav__heading">Feasty</h2>
-                <ul class="nav__links">
-                    <li class="nav__link"><a href="index.html">Home</a></li>
-                    <li class="nav__link"><a href="#" class="nav__item">Shop</a><i class="fas fa-sort-down"></i>
-                            <ul class="dropmenu">
-                                <li class="nav__link-sub"><a href="#">Hats</a></li>
-                                <li class="nav__link-sub"><a href="#">Hoodies</a></li>
-                                <li class="nav__link-sub"><a href="#">Pants</a></li>
-                                <li class="nav__link-sub"><a href="#">Supplements</a>
-                                  <ul class="dropmenu-sub">
-                                    <li class="nav__link-sub"><a href="#">Pre-Workouts</a></li>
-                                    <li class="nav__link-sub"><a href="#">Protein</a></li>
-                                    <li class="nav__link-sub"><a href="#">BCAAs</a></li>
-                                  </ul>
-                                </li>
-                            </ul>
-                    </li>
-                    <li class="nav__link"><a href="#">Gallery</a></li>
-                    <li class="nav__link"><a href="#">About</a><i class="fas fa-sort-down"></i>
-                        <ul class="dropmenu">
-                            <li class="nav__link-sub"><a href="#">Contact</a></li>
-                            <li class="nav__link-sub"><a href="#">Blog</a></li>
-                        </ul>
-                    </li>
+    <header class="header">
+        <nav class="navbar">
+          <div class="navbar__image">
+            <img src="./img/logo.png" alt="Gym Feasty Logo" class="navbar__logo">
+          </div>
+          <div class="navbar__links">
+            <ul class="navbar__list">
+              <li class="navbar__link"><a href="#" class="navbar__item">Home</a></li>
+              <li class="navbar__link">
+                <a href="#" class="navbar__item">
+                  Shop
+                  <span class="fas fa-caret-down"></span>
+                </a>
+                <ul class="dropdown">
+                  <li class="navbar__link-sub"><a href="#" class="navbar__item-sub">Supplements</a></li>
                 </ul>
-            </div>
+              </li>
+              <li class="navbar__link"><a href="gallery.html" class="navbar__item">Gallery</a></li>
+              <li class="navbar__link"><a href="#" class="navbar__item">About</a></li>
+              <li class="navbar__link"><a href="contact.html" class="navbar__item">Contact</a></li>
+            </ul>
+          </div>
         </nav>
-        
-        <header class="header">
-          <div class="header__image">
-            <img src="./img/idea-1.jpg" alt="">
-          </div>
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+    </header>
 
-          <div class="header__text">
-            <h1 class="heading__primary">Want to Become <br>a Member?</h1>
-            <a href="member.html" class="btn-join">Join Now</a>
-            <div class="header__socials">
-              <i class="fab fa-facebook fa-2x"></i>
-              <i class="fab fa-twitter fa-2x"></i>
-              <i class="fab fa-instagram fa-2x"></i>
+    <main class="main">
+      <div class="main__container">
+        <div class="main__container-sub">
+          <div class="main__header">
+            <h1 class="main__head">Want to Become <br>a Member?</h1>
+          </div>
+          <div class="main__info">
+            <div class="main__details">
+              <span class="main__motiv">Get your adrenaline going.</span>
+              <p class="main__paragraph">First training is free for new members!</p>
+            </div>
+            <button class="btn-join">
+              <a href="member.html" class="main__join">Join Now</a>
+            </button>
+            <div class="main__info--media">
+              <a href="#" class="main__media"><span class="fab fa-facebook-f"></span></a>
+              <a href="#" class="main__media"><span class="fab fa-instagram"></span></a>
+              <a href="#" class="main__media"><span class="fab fa-twitter"></span></a>
             </div>
           </div>
-        </header>
+        </div>
+      </div>
+    </main>
 
-        <main class="main">
-          <h3>Team Spirit</h3>
-          <div class="main__images">
-            <img src="./img/team-1.jpg" alt="">
-            <img src="./img/team-2.jpg" alt="">
-            <img src="./img/team-6.jpg" alt="">
-            <img src="./img/team-3.jpg" alt="">
-            <img src="./img/team-4.jpg" alt="">
-            <img src="./img/team-5.jpg" alt="">
-            <img src="./img/team-7.jpg" alt="">
-            <img src="./img/team-8.jpg" alt="">
+    <section class="team">
+      <div class="team__head">
+        <img src="./img/team-spirit.png" alt="Team Spirit" class="team__spirit">
+      </div>
+      <div class="team__showcase">
+        <div class="team__image-container">
+          <img src="./img/team-1.png" alt="Team 1" class="team__image">
+          <div class="team__motivational">
+            <p class="team__motivational--paragraph">
+              &Prime;All progress takes place outside the comfort zone.&Prime;
+            </p>
           </div>
-        </main>
-
-        <footer class="footer">
-          <div class="footer__text">
-            <p>Feasty &copy; 2021 by Eror Aleksandar</p>
+        </div>
+        <div class="team__image-container">
+          <img src="./img/team-2.png" alt="Team 1" class="team__image">
+          <div class="team__motivational">
+            <p class="team__motivational--paragraph">
+              &Prime;Success usually comes to those who are too busy to be looking for it.&Prime;
+            </p>
           </div>
-        </footer>
+        </div>
+        <div class="team__image-container">
+          <img src="./img/team-3.png" alt="Team 1" class="team__image">
+          <div class="team__motivational">
+            <p class="team__motivational--paragraph">
+              &Prime;If you think lifting is dangerous, try being weak. Being weak is dangerous.&Prime;
+            </p>
+          </div>
+        </div>
+        <div class="team__image-container">
+          <img src="./img/team-4.png" alt="Team 1" class="team__image">
+          <div class="team__motivational">
+            <p class="team__motivational--paragraph">
+              &Prime;The clock is ticking. Are you becoming the person you want to be?&Prime;
+            </p>
+          </div>
+        </div>
+        <div class="team__image-container">
+          <img src="./img/team-5.png" alt="Team 1" class="team__image">
+          <div class="team__motivational">
+            <p class="team__motivational--paragraph">
+              &Prime;Action is the foundational key to all success.&Prime;
+            </p>
+          </div>
+        </div>
+        <div class="team__image-container">
+          <img src="./img/team-6.png" alt="Team 1" class="team__image">
+          <div class="team__motivational">
+            <p class="team__motivational--paragraph">
+              &Prime;All our dreams can come true if we have the courage to pursue them.&Prime;
+            </p>
+          </div>
+        </div>
+        <div class="team__image-container">
+          <img src="./img/team-7.png" alt="Team 1" class="team__image">
+          <div class="team__motivational">
+            <p class="team__motivational--paragraph">
+              &Prime;All our dreams can come true if we have the courage to pursue them.&Prime;
+            </p>
+          </div>
+        </div>
+        <div class="team__image-container">
+          <img src="./img/team-8.png" alt="Team 1" class="team__image">
+          <div class="team__motivational">
+            <p class="team__motivational--paragraph">
+              &Prime;You have to think it before you can do it. The mind is what makes it all possible.&Prime;
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <script src="../js/main.js"></script>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo-container">
+          <img src="./img/logo-2.png" alt="Gym Feasty" class="footer__logo">
+        </div>
+        <div class="footer__links">
+          <ul class="footer__list">
+            <li class="footer__link"><a href="index.html" class="footer__item">Home</a></li>
+            <li class="footer__link"><a href="#" class="footer__item">Shop</a></li>
+            <li class="footer__link"><a href="gallery.html" class="footer__item">Gallery</a></li>
+            <li class="footer__link"><a href="#" class="footer__item">About</a></li>
+            <li class="footer__link"><a href="contact.html" class="footer__item">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__container-sub">
+        <div class="footer__inner">
+          <p class="footer__copyright">
+            Feasty &copy; By Eror Aleksandar
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__media">
+              <span class="fab fa-facebook-f"></span>
+            </a>
+            <a href="#" class="footer__media">
+              <span class="fab fa-instagram"></span>
+            </a>
+            <a href="#" class="footer__media">
+              <span class="fab fa-twitter"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="btn-top">
+        <a href="#top" class="footer__top">
+          <span class="fas fa-arrow-up"></span>
+          Back To Top
+        </a>
+      </button>
+      <div class="footer__info">
+        <h3 class="footer__open"><span class="footer__open-s">Open</span>Every Day / 07:00 - 20:00</h3>
+        <h3 class="footer__adress"><span class="footer__open-a">Address</span>TC Shopping Centre</h3>
+      </div>
+    </footer>
+
   </body>
 </html>

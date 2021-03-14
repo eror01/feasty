@@ -22,40 +22,51 @@
   </head>
 
   <body>
-    <div class="form">
-        <div class="form__back">
-            <a href="index.html"><i class="fas fa-arrow-left fa-3x"></i></a>
-        </div>
-        <div class="form__details">
-            <div class="form__details-sub">
-                <div class="form__item">
-                    <input type="text" placeholder="First Name">
-                </div>
-                <div class="form__item">
-                    <input type="text" placeholder="Last Name">
-                </div>
-            </div>
-            <div class="form__info">
-                <input type="text" placeholder="Card Number">
-            </div>
 
-            <div class="form__info">
-                <input type="text" placeholder="Cardholder Name">
+    <div class="checkout__container">
+        <div class="checkout__inner">
+            <div class="checkout__logo-container">
+              <img src="./img/logo-2.png" alt="Gym Feasty" class="checkout__logo">
             </div>
-
-            <div class="form__details-sub">
-                <div class="form__item">
-                    <input type="text" placeholder="Expiry Date">
+            <div class="checkout__form">
+              <div class="checkout__form-head">
+                <h1 class="checkout__head">Become a Feasty Member</h1>
+              </div>
+              <form action="#" class="form">
+                <div class="form__row">
+                  <div class="form__row--inner">
+                    <label for="firstname">First Name</label>
+                    <input type="text" required>
+                  </div>
+                  <div class="form__row--inner">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" required>
+                  </div>
                 </div>
-                <div class="form__item">
-                    <input type="text" placeholder="CVV">
+                <label for="email">Email *</label>
+                <input type="email" required>
+                <label for="cardnumber">Card Number</label>
+                <input type="number" required max="15">
+                <label for="cardplaceholder">Cardplaceholder Name</label>
+                <input type="text" required>
+                <div class="form__row">
+                  <div class="form__row--inner">
+                    <label for="firstname">Expiry Date</label>
+                    <input type="text" required>
+                  </div>  
+                  <div class="form__row--inner">
+                    <label for="cvv">CVV</label>
+                    <input type="password" required>
+                  </div>
                 </div>
-            </div>
-
-            <div class="form__btn">
-                <a href="#" class="btn-pay">Submit</a>
+              </form>
+              <div class="checkout__buttons">
+                <button class="btn-back"><a href="member.html" class="checkout__back">Back</a></button>
+                <button class="btn-submit">Submit</button>
+              </div>
             </div>
         </div>
     </div>
+
   </body>
 </html>
